@@ -48,6 +48,14 @@ public class LessonFragment extends Fragment {
                 binding.lb27, binding.lb28, binding.lb29, binding.lb30};
 
         idsl = Selectl(getListl());
+
+        if(idsl.size()<30){
+            binding.daysl.setText("Выполнено " + idsl.size() + " из 30 дней");
+        } else if (idsl.size()==30) {
+            binding.daysl.setText("Вы выполнили челлендж!");
+        }
+
+
         for (int i = 0; i < massButtonl.length; i++) {
             if (idsl.contains(massButtonl[i].getId()))
                 massButtonl[i].setChecked(true);
@@ -58,6 +66,19 @@ public class LessonFragment extends Fragment {
                 ClickLesson(radioButtonl.getId());
             });
         }
+
+        binding.btnl.setOnClickListener(v ->{
+            if (idsl.size() != 0){
+                for (int i = 0; i < massButtonl.length; i++) {
+                    if (idsl.contains(massButtonl[i].getId()))
+                        massButtonl[i].setChecked(false);
+                }
+                idsl.clear();
+                binding.progressBarL.setProgress(idsl.size());
+                binding.daysl.setText("Выполнено " + idsl.size() + " из 30 дней");
+            }
+        });
+        binding.progressBarL.setProgress(idsl.size());
     }
 
     private TreeSet<Integer> Selectl(ArrayList<Integer> saveListl) {
@@ -76,9 +97,13 @@ public class LessonFragment extends Fragment {
         if (strl.equals("нет"))
             return new ArrayList<>();
         else {
-            String[] templ = strl.split(",");
-            for (int l = 0; l < templ.length; l++) {
-                templistl.add(Integer.parseInt(templ[l]));
+            try {
+                String[] templ = strl.split(",");
+                for (int l = 0; l < templ.length; l++) {
+                    templistl.add(Integer.parseInt(templ[l]));
+                }
+            }catch (NumberFormatException e) {
+                System.out.println(e);
             }
         }
         return templistl;

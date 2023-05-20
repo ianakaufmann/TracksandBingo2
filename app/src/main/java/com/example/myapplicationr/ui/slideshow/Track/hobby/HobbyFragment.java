@@ -51,6 +51,13 @@ public class HobbyFragment extends Fragment {
 
 
         ids = Select(getList());
+
+        if(ids.size()<30){
+            binding.daysh.setText("Выполнено " + ids.size() + " из 30 дней");
+        } else if (ids.size()==30) {
+            binding.daysh.setText("Вы выполнили челлендж!");
+        }
+
         for (int i = 0; i < massButtons.length; i++) {
             if (ids.contains(massButtons[i].getId()))
                 massButtons[i].setChecked(true);
@@ -61,6 +68,19 @@ public class HobbyFragment extends Fragment {
                 Clickhobby(radioButton.getId());
             });
         }
+
+        binding.btnh.setOnClickListener(v ->{
+            if (ids.size() != 0){
+                for (int i = 0; i < massButtons.length; i++) {
+                    if (ids.contains(massButtons[i].getId()))
+                        massButtons[i].setChecked(false);
+                }
+                ids.clear();
+                binding.progressBarH.setProgress(ids.size());
+                binding.daysh.setText("Выполнено " + ids.size() + " из 30 дней");
+            }
+        });
+        binding.progressBarH.setProgress(ids.size());
     }
 
     private TreeSet<Integer> Select(ArrayList<Integer> saveList) {
@@ -80,9 +100,14 @@ public class HobbyFragment extends Fragment {
         if (str.equals("не определено"))
             return new ArrayList<>();
         else {
-            String[] temp = str.split(",");
-            for (int i = 0; i < temp.length; i++) {
-                templist.add(Integer.parseInt(temp[i]));
+            try {
+                String[] temp = str.split(",");
+                for (int i = 0; i < temp.length; i++) {
+                    templist.add(Integer.parseInt(temp[i]));
+                }
+            }
+            catch (NumberFormatException e) {
+                System.out.println(e);
             }
         }
         return templist;

@@ -40,23 +40,43 @@ public class SportFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        RadioButton[] massButtons = {binding.sb1, binding.sb2, binding.sb3, binding.sb4, binding.sb5,
+        RadioButton[] massButtonss = {binding.sb1, binding.sb2, binding.sb3, binding.sb4, binding.sb5,
                 binding.sb6, binding.sb7, binding.sb8, binding.sb9, binding.sb10, binding.sb11, binding.sb12,
                 binding.sb13, binding.sb13, binding.sb14, binding.sb15, binding.sb16, binding.sb17, binding.sb18,
                 binding.sb19, binding.sb20, binding.sb21, binding.sb22, binding.sb23, binding.sb24, binding.sb25,
                 binding.sb26, binding.sb27, binding.sb28, binding.sb29, binding.sb30};
 
         idss = Select(getLists());
-        for (int i = 0; i < massButtons.length; i++) {
-            if (idss.contains(massButtons[i].getId()))
-                massButtons[i].setChecked(true);
+
+        if(idss.size()<30){
+            binding.dayss.setText("Выполнено " + idss.size() + " из 30 дней");
+        } else if (idss.size()==30) {
+            binding.dayss.setText("Вы выполнили челлендж!");
         }
 
-        for (RadioButton radioButtons : massButtons) {
+        for (int i = 0; i < massButtonss.length; i++) {
+            if (idss.contains(massButtonss[i].getId()))
+                massButtonss[i].setChecked(true);
+        }
+
+        for (RadioButton radioButtons : massButtonss) {
             radioButtons.setOnClickListener(v -> {
                 ClickSport(radioButtons.getId());
             });
         }
+
+        binding.btns.setOnClickListener(v ->{
+            if (idss.size() != 0){
+                for (int i = 0; i < massButtonss.length; i++) {
+                    if (idss.contains(massButtonss[i].getId()))
+                        massButtonss[i].setChecked(false);
+                }
+                idss.clear();
+                binding.progressBarS.setProgress(idss.size());
+                binding.dayss.setText("Выполнено " + idss.size() + " из 30 дней");
+            }
+        });
+        binding.progressBarS.setProgress(idss.size());
     }
 
     private TreeSet<Integer> Select(ArrayList<Integer> saveLists) {
@@ -75,9 +95,13 @@ public class SportFragment extends Fragment {
         if (strs.equals("нет"))
             return new ArrayList<>();
         else {
-            String[] temps = strs.split(",");
-            for (int s = 0; s < temps.length; s++) {
-                templists.add(Integer.parseInt(temps[s]));
+            try {
+                String[] temps = strs.split(",");
+                for (int s = 0; s < temps.length; s++) {
+                    templists.add(Integer.parseInt(temps[s]));
+                }
+            }catch (NumberFormatException e) {
+                System.out.println(e);
             }
         }
         return templists;

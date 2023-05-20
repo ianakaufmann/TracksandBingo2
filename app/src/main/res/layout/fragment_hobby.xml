@@ -672,10 +672,18 @@
         android:paddingBottom="65dp" />
 
     <TextView
+        android:paddingBottom="65dp"
         android:gravity="center"
         android:id="@+id/daysh"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"
         android:text="@string/textday"/>
+
+    <Button
+        android:backgroundTint="#6C794E"
+        android:id="@+id/btnh"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn"/>
 </LinearLayout>

@@ -47,6 +47,13 @@ public class PersonalFragment extends Fragment {
                 binding.pb26, binding.pb27, binding.pb28, binding.pb29, binding.pb30};
 
         idsp = Selectp(getListp());
+
+        if(idsp.size()<30){
+            binding.daysp.setText("Выполнено " + idsp.size() + " из 30 дней");
+        } else if (idsp.size()==30) {
+            binding.daysp.setText("Вы выполнили челлендж!");
+        }
+
         for (int i = 0; i < massButtonp.length; i++) {
             if (idsp.contains(massButtonp[i].getId()))
                 massButtonp[i].setChecked(true);
@@ -57,6 +64,19 @@ public class PersonalFragment extends Fragment {
                 ClickPersonal(radioButtonp.getId());
             });
         }
+
+        binding.btnp.setOnClickListener(v ->{
+            if (idsp.size() != 0){
+                for (int i = 0; i < massButtonp.length; i++) {
+                    if (idsp.contains(massButtonp[i].getId()))
+                        massButtonp[i].setChecked(false);
+                }
+                idsp.clear();
+                binding.progressBarP.setProgress(idsp.size());
+                binding.daysp.setText("Выполнено " + idsp.size() + " из 30 дней");
+            }
+        });
+        binding.progressBarP.setProgress(idsp.size());
     }
 
     private TreeSet<Integer> Selectp(ArrayList<Integer> saveListp) {
@@ -75,9 +95,13 @@ public class PersonalFragment extends Fragment {
         if (strp.equals("нетушки"))
             return new ArrayList<>();
         else {
-            String[] tempp = strp.split(",");
-            for (int p = 0; p < tempp.length; p++) {
-                templistp.add(Integer.parseInt(tempp[p]));
+            try {
+                String[] tempp = strp.split(",");
+                for (int p = 0; p < tempp.length; p++) {
+                    templistp.add(Integer.parseInt(tempp[p]));
+                }
+            }catch (NumberFormatException e) {
+                System.out.println(e);
             }
         }
         return templistp;
