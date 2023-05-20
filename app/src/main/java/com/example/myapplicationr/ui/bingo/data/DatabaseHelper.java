@@ -14,7 +14,7 @@ import java.io.OutputStream;
 public class DatabaseHelper extends SQLiteOpenHelper {
 
     private static String DB_PATH = "";
-    private static final String DATABASE_NAME = "database_trackandbingo.db";
+    private static final String DATABASE_NAME = "dbtranbi.db";
     private static final int SCHEMA = 1;
 
     private Context myContext;
