@@ -6,7 +6,8 @@
     tools:context=".ui.slideshow.Track.hobby.HobbyFragment"
     android:background="@drawable/back3"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    android:layout_gravity="center">
 
     <TextView
         android:paddingStart="15dp"
@@ -18,9 +19,10 @@
         android:textSize="35sp"
         android:text="@string/_30dayhobby"
         android:textColor="#6C794E"
-        android:paddingBottom="30dp" />
+        android:paddingBottom="20dp"/>
 
     <TextView
+        android:paddingBottom="30dp"
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
         android:gravity="center"
@@ -28,8 +30,7 @@
         android:layout_height="wrap_content"
         android:text="@string/hobbytext"
         android:textSize="20sp"
-        tools:ignore="TextSizeCheck"
-        android:paddingBottom="30dp" />
+        tools:ignore="TextSizeCheck"/>
 
     <LinearLayout
         android:gravity="center"
@@ -675,5 +676,6 @@
         android:id="@+id/daysh"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20dp" />
+        android:textSize="20dp"
+        android:text="@string/textday"/>
 </LinearLayout>

@@ -16,17 +16,17 @@
         android:textSize="35dp"
         android:text="@string/_30daylesson"
         android:textColor="#6C794E"
-        android:paddingBottom="20dp" />
+        android:paddingBottom="20dp"/>
 
     <TextView
+        android:paddingBottom="30dp"
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
-        android:paddingBottom="30dp"
         android:gravity="center"
+        android:textSize="15sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lessontext"
-        android:textSize="20dp" />
+        android:text="@string/lessontext" />
 
     <LinearLayout
         android:paddingTop="10dp"
@@ -667,5 +667,6 @@
         android:id="@+id/daysl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20dp" />
+        android:textSize="20dp"
+        android:text="@string/textday"/>
 </LinearLayout>

@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:id="@+id/dey30"
         android:layout_height="wrap_content"
-        android:textSize="35dp"
+        android:textSize="35sp"
         android:text="30 ДНЕЙ БЕЗ ВРЕДНОЙ ЕДЫ"
         android:textColor="#6C794E"
         android:paddingBottom="20dp" />
@@ -26,7 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/personaltext"
-        android:textSize="20dp" />
+        android:textSize="15sp" />
 
     <LinearLayout
         android:paddingTop="10dp"
@@ -667,5 +667,6 @@
         android:id="@+id/daysp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20dp" />
+        android:textSize="20sp"
+        android:text="@string/textday"/>
 </LinearLayout>

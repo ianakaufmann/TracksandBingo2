@@ -3,10 +3,10 @@
     <item android:id="@+id/background">
         <shape android:shape="line">
             <stroke
-                android:width="3dp"
+                android:width="10dp"
                 android:color="#FFDDAA"
                 android:dashWidth="20dp"
-                android:dashGap="7dp" />
+                android:dashGap="10dp" />
         </shape>
     </item>
 
@@ -16,10 +16,10 @@
             android:gravity="start">
             <shape android:shape="line">
                 <stroke
-                    android:width="3dp"
+                    android:width="10dp"
                     android:color="#6B6F4F"
                     android:dashWidth="21dp"
-                    android:dashGap="7dp" />
+                    android:dashGap="10dp" />
             </shape>
         </clip>
     </item>
