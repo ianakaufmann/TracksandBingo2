@@ -21,6 +21,8 @@ import com.example.myapplicationr.ui.slideshow.Track.sport.SportFragment;
 public class SlideshowFragment extends Fragment {
 
     private FragmentSlideshowBinding binding;
+    private HobbyFragment hb;
+
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {

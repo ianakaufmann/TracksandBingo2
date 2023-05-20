@@ -21,8 +21,6 @@ import com.example.myapplicationr.ui.slideshow.SlideshowFragment;
 
 public class HomeFragment extends Fragment {
     private FragmentHomeBinding binding;
-    int progressh = 0;
-
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,

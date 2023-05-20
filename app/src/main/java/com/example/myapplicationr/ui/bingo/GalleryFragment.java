@@ -10,6 +10,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.myapplicationr.R;
 import com.example.myapplicationr.databinding.FragmentGalleryBinding;
 
 public class GalleryFragment extends Fragment {
@@ -26,6 +27,15 @@ public class GalleryFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        binding.startBingo.setOnClickListener(v -> {
+            getParentFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.nav_host_fragment_content_main, new BingoFragment())
+                    .addToBackStack(null)
+                    .commit();
+
+        });
     }
 
     @Override
@@ -33,4 +43,6 @@ public class GalleryFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
+
+
 }

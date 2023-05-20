@@ -20,7 +20,8 @@
             android:layout_width="125dp"
             android:layout_height="125dp"
             android:layout_gravity="center"
-            android:layout_margin="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:backgroundTint="#00000000"
             app:srcCompat="@drawable/hobby" />
 
@@ -28,7 +29,8 @@
             android:id="@+id/sport"
             android:layout_width="125dp"
             android:layout_height="125dp"
-            android:layout_margin="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             app:srcCompat="@drawable/sport"
             android:backgroundTint="#00000000" />
     </LinearLayout>
@@ -38,11 +40,33 @@
         android:layout_height="wrap_content"
         android:gravity="center">
 
+        <TextView
+            android:id="@+id/hb"
+            android:layout_width="125dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+
+        <TextView
+            android:id="@+id/sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="125dp"
+            android:layout_height="25dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
         <ImageButton
+            android:layout_marginTop="10dp"
             android:id="@+id/personal"
             android:layout_width="125dp"
             android:layout_height="125dp"
-            android:layout_margin="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             app:srcCompat="@drawable/personal"
             android:backgroundTint="#00000000" />
 
@@ -51,8 +75,28 @@
             android:layout_width="125dp"
             android:layout_height="125dp"
             android:layout_gravity="center"
-            android:layout_margin="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:backgroundTint="#00000000"
             app:srcCompat="@drawable/lesson" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/pr"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="125dp"
+            android:layout_height="25dp"/>
+        <TextView
+            android:id="@+id/ls"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="125dp"
+            android:layout_height="25dp"/>
     </LinearLayout>
 </LinearLayout>
