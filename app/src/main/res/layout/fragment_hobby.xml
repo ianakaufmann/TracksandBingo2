@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".ui.slideshow.Track.hobby.HobbyFragment"
+    android:background="@drawable/back3"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:id="@+id/dey30"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:text="@string/_30dayhobby"
+        android:textColor="#6C794E"
+        android:paddingBottom="30dp" />
+
+    <TextView
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hobbytext"
+        android:textSize="20sp"
+        tools:ignore="TextSizeCheck"
+        android:paddingBottom="30dp" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="6dp"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:text="6"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="12dp"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:text="7"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RadioButton
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="6dp"
+                android:buttonTint="#6C794E"
+                android:button="@drawable/rbutton_selector"
+                android:id="@+id/hobbyButton1"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:buttonTint="#6C794E"
+                android:button="@drawable/rbutton_selector"
+                android:id="@+id/hobbyButton2"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:buttonTint="#6C794E"
+                android:button="@drawable/rbutton_selector"
+                android:id="@+id/hobbyButton3"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:buttonTint="#6C794E"
+                android:button="@drawable/rbutton_selector"
+                android:id="@+id/hobbyButton4"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:buttonTint="#6C794E"
+                android:button="@drawable/rbutton_selector"
+                android:id="@+id/hobbyButton5"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:buttonTint="#6C794E"
+                android:button="@drawable/rbutton_selector"
+                android:id="@+id/hobbyButton6"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="12dp"
+                android:buttonTint="#6C794E"
+                android:button="@drawable/rbutton_selector"
+                android:id="@+id/hobbyButton7"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="6dp"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:text="8"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:text="9"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:text="11"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:text="13"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="12dp"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:text="14"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RadioButton
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="6dp"
+                android:buttonTint="#6C794E"
+                android:button="@drawable/rbutton_selector"
+                android:id="@+id/hobbyButton8"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:buttonTint="#6C794E"
+                android:button="@drawable/rbutton_selector"
+                android:id="@+id/hobbyButton9"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:buttonTint="#6C794E"
+                android:button="@drawable/rbutton_selector"
+                android:id="@+id/hobbyButton10"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:buttonTint="#6C794E"
+                android:button="@drawable/rbutton_selector"
+                android:id="@+id/hobbyButton11"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:buttonTint="#6C794E"
+                android:button="@drawable/rbutton_selector"
+                android:id="@+id/hobbyButton12"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:buttonTint="#6C794E"
+                android:button="@drawable/rbutton_selector"
+                android:id="@+id/hobbyButton13"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="12dp"
+                android:buttonTint="#6C794E"
+                android:button="@drawable/rbutton_selector"
+                android:id="@+id/hobbyButton14"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="6dp"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:text="16"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:text="17"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:text="18"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:text="19"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="12dp"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:text="21"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RadioButton
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="6dp"
+                android:buttonTint="#6C794E"
+                android:button="@drawable/rbutton_selector"
+                android:id="@+id/hobbyButton15"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:buttonTint="#6C794E"
+                android:button="@drawable/rbutton_selector"
+                android:id="@+id/hobbyButton16"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:buttonTint="#6C794E"
+                android:button="@drawable/rbutton_selector"
+                android:id="@+id/hobbyButton17"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:buttonTint="#6C794E"
+                android:button="@drawable/rbutton_selector"
+                android:id="@+id/hobbyButton18"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:buttonTint="#6C794E"
+                android:button="@drawable/rbutton_selector"
+                android:id="@+id/hobbyButton19"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:buttonTint="#6C794E"
+                android:button="@drawable/rbutton_selector"
+                android:id="@+id/hobbyButton20"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="12dp"
+                android:buttonTint="#6C794E"
+                android:button="@drawable/rbutton_selector"
+                android:id="@+id/hobbyButton21"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="6dp"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:text="22"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:text="23"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:text="24"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:text="25"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:text="26"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:text="27"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="12dp"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:text="28"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RadioButton
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="6dp"
+                android:buttonTint="#6C794E"
+                android:button="@drawable/rbutton_selector"
+                android:id="@+id/hobbyButton22"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:buttonTint="#6C794E"
+                android:button="@drawable/rbutton_selector"
+                android:id="@+id/hobbyButton23"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:buttonTint="#6C794E"
+                android:button="@drawable/rbutton_selector"
+                android:id="@+id/hobbyButton24"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:buttonTint="#6C794E"
+                android:button="@drawable/rbutton_selector"
+                android:id="@+id/hobbyButton25"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:buttonTint="#6C794E"
+                android:button="@drawable/rbutton_selector"
+                android:id="@+id/hobbyButton26"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:buttonTint="#6C794E"
+                android:button="@drawable/rbutton_selector"
+                android:id="@+id/hobbyButton27"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="12dp"
+                android:buttonTint="#6C794E"
+                android:button="@drawable/rbutton_selector"
+                android:id="@+id/hobbyButton28"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="6dp"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:text="29"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="12dp"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:text="30"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RadioButton
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="6dp"
+                android:buttonTint="#6C794E"
+                android:button="@drawable/rbutton_selector"
+                android:id="@+id/hobbyButton29"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="12dp"
+                android:buttonTint="#6C794E"
+                android:button="@drawable/rbutton_selector"
+                android:id="@+id/hobbyButton30"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:paddingTop="50dp"
+        android:id="@+id/progressBarH"
+        android:progressDrawable="@drawable/dash_progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="30"
+        android:paddingBottom="65dp" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/daysh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp" />
+</LinearLayout>

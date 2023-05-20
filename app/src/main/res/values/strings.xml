@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Tracks and Bingo!</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Главная</string>
+    <string name="menu_gallery">Bingo!</string>
+    <string name="menu_slideshow">Трекеры привычек</string>
+    <string name="lessontext">Изучая английский язык каждый день, вы сможете не только прокачать свои навыки общения, но и круто проводить время за просмотром фильмов и сериалов в оригинале. Достаточно лишь 10 минут в день, чтобы выучить английский. И, пожалуй, это самая веская причина для начала новой привычки прямо сейчас!</string>
+    <string name="_30daylesson">30 ДНЕЙ АНГЛИЙСКОГО</string>
+    <string name="hobbytext">Рисование развивает взаимную координацию руки и глаза, усиливает умение видеть то, что находится прямо перед вами, и улучшает способность к зрительному мышлению.</string>
+    <string name="sporttext">Занятия спортом помогают отвлечься от проблем и снизить уровень стресса. При здоровом подходе к спорту укрепляется иммунитет, а следовательно, улучшается самочувствие.</string>
+    <string name="_30dayhobby">30 ДНЕЙ РИСОВАНИЯ</string>
+</resources>
