@@ -25,7 +25,8 @@
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:background="#B1A17D"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:tag="1">
             <TextView
                 android:id="@+id/tx1"
                 android:layout_width="100dp"
@@ -37,6 +38,7 @@
             android:layout_weight="1"
             android:background="?android:attr/listDivider" />
         <LinearLayout
+            android:tag="2"
             android:id="@+id/bingo2"
             android:layout_width="90dp"
             android:layout_height="90dp"
@@ -52,6 +54,7 @@
             android:layout_weight="1"
             android:background="?android:attr/listDivider" />
         <LinearLayout
+            android:tag="3"
             android:id="@+id/bingo3"
             android:layout_width="90dp"
             android:layout_height="90dp"
@@ -64,6 +67,7 @@
             android:layout_weight="1"
             android:background="?android:attr/listDivider" />
         <LinearLayout
+            android:tag="4"
             android:id="@+id/bingo4"
             android:layout_width="90dp"
             android:layout_height="90dp"
@@ -76,6 +80,7 @@
             android:layout_weight="1"
             android:background="?android:attr/listDivider" />
         <LinearLayout
+            android:tag="5"
             android:id="@+id/bingo5"
             android:layout_width="90dp"
             android:layout_height="90dp"
@@ -95,6 +100,7 @@
         android:orientation="horizontal"
         android:gravity="center">
         <LinearLayout
+            android:tag="6"
             android:id="@+id/bingo6"
             android:layout_width="90dp"
             android:layout_height="90dp"
@@ -109,6 +115,7 @@
             android:layout_weight="1"
             android:background="?android:attr/listDivider" />
         <LinearLayout
+            android:tag="7"
             android:orientation="horizontal"
             android:id="@+id/bingo7"
             android:layout_width="90dp"
@@ -121,6 +128,7 @@
             android:layout_weight="1"
             android:background="?android:attr/listDivider" />
         <LinearLayout
+            android:tag="8"
             android:orientation="horizontal"
             android:id="@+id/bingo8"
             android:layout_width="90dp"
@@ -133,6 +141,7 @@
             android:layout_weight="1"
             android:background="?android:attr/listDivider" />
         <LinearLayout
+            android:tag="9"
             android:orientation="horizontal"
             android:id="@+id/bingo9"
             android:layout_width="90dp"
@@ -145,6 +154,7 @@
             android:layout_weight="1"
             android:background="?android:attr/listDivider" />
         <LinearLayout
+            android:tag="10"
             android:orientation="horizontal"
             android:id="@+id/bingo10"
             android:layout_width="90dp"
@@ -163,6 +173,7 @@
         android:orientation="horizontal"
         android:gravity="center">
         <LinearLayout
+            android:tag="11"
             android:orientation="horizontal"
             android:id="@+id/bingo11"
             android:layout_width="90dp"
@@ -178,6 +189,7 @@
             android:layout_weight="1"
             android:background="?android:attr/listDivider" />
         <LinearLayout
+            android:tag="12"
             android:orientation="horizontal"
             android:id="@+id/bingo12"
             android:layout_width="90dp"
@@ -190,6 +202,7 @@
             android:layout_weight="1"
             android:background="?android:attr/listDivider" />
         <LinearLayout
+            android:tag="13"
             android:orientation="horizontal"
             android:id="@+id/bingo13"
             android:layout_width="90dp"
@@ -202,6 +215,7 @@
             android:layout_weight="1"
             android:background="?android:attr/listDivider" />
         <LinearLayout
+            android:tag="14"
             android:orientation="horizontal"
             android:id="@+id/bingo14"
             android:layout_width="90dp"
@@ -214,6 +228,7 @@
             android:layout_weight="1"
             android:background="?android:attr/listDivider" />
         <LinearLayout
+            android:tag="15"
             android:orientation="horizontal"
             android:id="@+id/bingo15"
             android:layout_width="90dp"
@@ -232,6 +247,7 @@
         android:orientation="horizontal"
         android:gravity="center">
         <LinearLayout
+            android:tag="16"
             android:id="@+id/bingo16"
             android:layout_width="90dp"
             android:layout_height="90dp"
@@ -247,6 +263,7 @@
             android:layout_weight="1"
             android:background="?android:attr/listDivider" />
         <LinearLayout
+            android:tag="17"
             android:orientation="horizontal"
             android:id="@+id/bingo17"
             android:layout_width="90dp"
@@ -259,6 +276,7 @@
             android:layout_weight="1"
             android:background="?android:attr/listDivider" />
         <LinearLayout
+            android:tag="18"
             android:orientation="horizontal"
             android:id="@+id/bingo18"
             android:layout_width="90dp"
@@ -271,6 +289,7 @@
             android:layout_weight="1"
             android:background="?android:attr/listDivider" />
         <LinearLayout
+            android:tag="19"
             android:orientation="horizontal"
             android:id="@+id/bingo19"
             android:layout_width="90dp"
@@ -283,6 +302,7 @@
             android:layout_weight="1"
             android:background="?android:attr/listDivider" />
         <LinearLayout
+            android:tag="20"
             android:orientation="horizontal"
             android:id="@+id/bingo20"
             android:layout_width="90dp"
@@ -302,6 +322,7 @@
         android:orientation="horizontal"
         android:gravity="center">
         <LinearLayout
+            android:tag="21"
             android:id="@+id/bingo21"
             android:layout_width="90dp"
             android:layout_height="90dp"
@@ -317,6 +338,7 @@
             android:layout_weight="1"
             android:background="?android:attr/listDivider" />
         <LinearLayout
+            android:tag="22"
             android:orientation="horizontal"
             android:id="@+id/bingo22"
             android:layout_width="90dp"
@@ -329,6 +351,7 @@
             android:layout_weight="1"
             android:background="?android:attr/listDivider" />
         <LinearLayout
+            android:tag="23"
             android:orientation="horizontal"
             android:id="@+id/bingo23"
             android:layout_width="90dp"
@@ -341,6 +364,7 @@
             android:layout_weight="1"
             android:background="?android:attr/listDivider" />
         <LinearLayout
+            android:tag="24"
             android:orientation="horizontal"
             android:id="@+id/bingo24"
             android:layout_width="90dp"
@@ -353,6 +377,7 @@
             android:layout_weight="1"
             android:background="?android:attr/listDivider" />
         <LinearLayout
+            android:tag="25"
             android:orientation="horizontal"
             android:id="@+id/bingo25"
             android:layout_width="90dp"
@@ -360,14 +385,10 @@
             android:background="#B1A17D">
         </LinearLayout>
     </LinearLayout>
-
     <View
         android:layout_width="458dp"
         android:layout_height="1dp"
         android:background="?android:attr/listDivider" />
-
-
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -375,6 +396,7 @@
         android:gravity="center"
         android:paddingBottom="100dp">
         <LinearLayout
+            android:tag="26"
             android:id="@+id/bingo26"
             android:layout_width="90dp"
             android:layout_height="90dp"
@@ -390,6 +412,7 @@
             android:layout_weight="1"
             android:background="?android:attr/listDivider" />
         <LinearLayout
+            android:tag="27"
             android:orientation="horizontal"
             android:id="@+id/bingo27"
             android:layout_width="90dp"
@@ -402,6 +425,7 @@
             android:layout_weight="1"
             android:background="?android:attr/listDivider" />
         <LinearLayout
+            android:tag="28"
             android:orientation="horizontal"
             android:id="@+id/bingo28"
             android:layout_width="90dp"
@@ -414,6 +438,7 @@
             android:layout_weight="1"
             android:background="?android:attr/listDivider" />
         <LinearLayout
+            android:tag="29"
             android:orientation="horizontal"
             android:id="@+id/bingo29"
             android:layout_width="90dp"
@@ -426,6 +451,7 @@
             android:layout_weight="1"
             android:background="?android:attr/listDivider" />
         <LinearLayout
+            android:tag="30"
             android:orientation="horizontal"
             android:id="@+id/bingo30"
             android:layout_width="90dp"
